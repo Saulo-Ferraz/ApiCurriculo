@@ -6,6 +6,8 @@
   "scripts": {
     "generate": "npx prisma generate",
     "deploy": "npx prisma migrate deploy",
+    "build": "npm run generate",
+    "start": "npm run build && node build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
